@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aurora Black Water Lilies</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe, #a18cd1);
+            font-family: Arial, sans-serif;
+        }
+
+        #video, #audio {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .text1, .text2 {
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .text1 {
+            background-color: pink;
+        }
+
+        .text2 {
+            background-color: lightblue;
+        }
+
+        .whole-text {
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            background: rgb(175, 89, 255);
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border-color: black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        tr {
+            transition: 0.3s;
+        }
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.39);
+        }
+
+        th {
+            background-color: rgb(175, 89, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="whole-text">
+        <div class="text1">
+            <p id="text-color-red">This is a sample text 1</p>
+        </div>
+
+        <div class="text2">
+            <p id="text-underline">This is a sample text 2</p>
+        </div>
+    </div>
+
+    <div id="video">
+        <video width="800" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="audio">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <table border="1" class="table">
+        <tr>
+            <th>No.</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Song</th>
+            <th>Play</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Aurora</td>
+            <td>All My Demons Greeting Me As A Friend</td>
+            <td>Black Water Lilies</td>
+            <td>
+                <audio controls>
+                    <source src="Aurora.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Aurora</td>
+            <td>The Gods We Can Touch</td>
+            <td>Exist For Love</td>
+            <td>
+                <audio controls>
+                    <source src="Exist For Love.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        alert('Hello World');
+        document.getElementById("text-color-red").style.color = "red";
+        document.getElementById("text-underline").style.textDecoration = "underline";
+    </script>
+
+</body>
+</html>
